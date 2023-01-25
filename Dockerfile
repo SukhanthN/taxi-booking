@@ -1,3 +1,3 @@
 FROM openjdk:8
-ADD target/taxi-booking-1.0.1.war taxi-booking-1.0.1.war
-ENTRYPOINT ["java", "-war", "taxi-booking-1.0.1.war"]
+ADD target/server.jar server.jar
+ENTRYPOINT ["java", "-jar", "server.jar"]
